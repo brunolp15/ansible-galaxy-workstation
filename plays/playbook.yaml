@@ -8,6 +8,6 @@
 
   roles:
     - role: ../roles/external/system
-    #- role: ../roles/external/utils
+    - role: ../roles/external/utils
     #- role: ../roles/external/cloud
     #- role: ../roles/external/iac

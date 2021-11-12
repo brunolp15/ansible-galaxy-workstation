@@ -3,9 +3,9 @@ The goal of this project is to create an automation via Ansible in order to conf
 
 ## Dependecies ##
 - ansible >= v2.11.6
-- ansible-galaxy >= v2.11.
+- ansible-galaxy >= v2.11.6
 
-## Instaling External Roles ##
+## Installing External Roles ##
 
 1 - To install external roles run the role_update.sh script which will download all roles via Ansible Galaxy.
 ```bash
