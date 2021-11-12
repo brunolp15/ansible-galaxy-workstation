@@ -1,45 +1,23 @@
-# Workstation
-=========
-
-Esse projeto instala e configura todas as ferramentas e configurações básicas para um notebook de trabalho com DevOps/SRE.
+# Automatic tools installation on work laptop
+The goal of this project is to create an automation via Ansible in order to configure and install basic tools in a work notebook
 
 ## Dependecies ##
 - ansible >= v2.11.6
-- ansible-galaxy >= v2.11.6
+- ansible-galaxy >= v2.11.
 
+## Instaling External Roles ##
 
-## Goals ##
+1 - To install external roles run the role_update.sh script which will download all roles via Ansible Galaxy.
+```bash
+./external/setup/role_update.sh     
+```
 
-Running the Code
---------------
+## Running the Playbook ##
 
-     * Para instalar as roles externas execute o script role_update.sh que irá realizar o download de todas as role via Ansible Galaxy.
-     ```
-     ./extensions/setup/role_update.sh
-      
-     ```
-     * Insira os hosts que deseja rodar no playbook de acordo com a plataforma de cloud utilizada pela aplicação.
-     ```
-     ../inventory/hosts_aws ou ./inventory/hosts_gcp
-
-     ```
-     * Para rodar o playbook do init_server execute o seguinte commando.
-     ```
-     ansible-playbook -i inventory/hosts_aws plays/playbook-init-host.yml
+2 - To run the playbook run the following command.
+```bash
+ansible-playbook -i inventory/host plays/playbook .yml    
+```
  
-Dependencies
-------------
-
-Nenhuma.
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-   Bruno Lopes.
-
-   bruno.llopes@b2wdigital.com
+## References ##
+https://galaxy.ansible.com/
