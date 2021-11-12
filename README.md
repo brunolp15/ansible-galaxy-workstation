@@ -21,3 +21,4 @@ ansible-playbook -i inventory/host plays/playbook .yml
  
 ## References ##
 https://galaxy.ansible.com/
+https://githubmemory.com/repo/agowa338/ansible-best-practises
