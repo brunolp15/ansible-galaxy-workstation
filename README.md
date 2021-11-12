@@ -1,12 +1,14 @@
-Init\_server
+# Workstation
 =========
 
-Esse projeto prepara o ambiente inicial para suportar todos os serviços em produção no Labs, configurando e instalando dependências.
+Esse projeto instala e configura todas as ferramentas e configurações básicas para um notebook de trabalho com DevOps/SRE.
 
-Requirements
-------------
+## Dependecies ##
+- ansible >= v2.11.6
+- ansible-galaxy >= v2.11.6
 
-Esse projeto requer a instalação do Ansible 2.5.5 ou superior
+
+## Goals ##
 
 Running the Code
 --------------
