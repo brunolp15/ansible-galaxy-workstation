@@ -1,0 +1,13 @@
+---
+- name: Installing all required tools to work!
+  hosts: laptop
+  become_user: root
+  vars_files:
+    #- "../group_vars/sysctl.yml"
+    #- "../group_vars/java.yml"
+
+  roles:
+    - role: ../roles/external/system
+    #- role: ../roles/external/utils
+    #- role: ../roles/external/cloud
+    #- role: ../roles/external/iac
